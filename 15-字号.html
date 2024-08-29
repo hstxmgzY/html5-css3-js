@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-字号</title>
+    <style>
+        p {
+          font-size: 20px;
+          color: red;
+          color: aquamarine;
+          /*font: style weight size 字体;*/
+          font: italic 400 66px 宋体;
+
+          /* 一个属性冒号后面书写多个值的写法 -- 复合属性 */
+        }
+
+        div {
+          font-weight: 700;
+          /* 如果用户电脑没有安装微软雅黑字体，就按黑体展示文字 */
+          /* 如果电脑没有安装黑体，就按任意一种非衬线字体系列显示 */
+          font-family: 微软雅黑, 黑体, sans-serif;
+        }
+
+        span {
+          font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!--默认字号是16-->
+    <p>我是段落文字</p>
+    <div>我是楷体</div>
+    <div>我变粗了</div>
+    <span>我变斜了</span>
+    &nbsp;
+    <em>我也斜了</em>
+</body>
+</html>
