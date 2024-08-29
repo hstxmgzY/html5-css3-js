@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>26-背景</title>
+    <style>
+        /*背景色*/
+        div.color1 {
+            width: 400px;
+            height: 400px;
+            background-color: #ccc;
+        }
+        div.color2 {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(132,146,14,0.5);
+        }
+        /*背景图片*/
+        div.picture {
+            width: 1600px;
+            height: 1600px;
+            background-color: pink;
+            background-image: url(04.png);
+            background-repeat: no-repeat;
+            /*注意 这个图片是700x700，盒子只有400x400，只能显示一部分（右上角的）图*/
+            background-position: -50px -89px;
+        }
+        div.complex {
+            width: 1400px;
+            height: 1400px;
+            background: #87ceeb url("04.png") no-repeat center center;
+        }
+    </style>
 </head>
 <body>
-    
+    <!--    背景色：十六进制-->
+    <div class="color1">div1</div>
+    <!--    背景色：rgba-->
+    <div class="color2">div2</div>
+    <!--    背景图片-->
+    <div class="picture">文字文字文字</div>
+    <div class="complex">haahahh</div>
 </body>
 </html>
