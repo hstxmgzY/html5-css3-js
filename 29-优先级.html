@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>29-测试优先级</title>
+    <style>
+        #box1 {
+            color: orange;
+        }
+        #box2 {
+            color: orange;
+        }
+        .box {
+            color: rebeccapurple;
+        }
+        div {
+          color: green !important;
+        }
+        body {
+            color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">hihihi</div>
+    <div id="box1">nihaoya</div>
+    <div class="box" id="box2" style="color: palegoldenrod;">测试优先级</div>
+</body>
+</html>
