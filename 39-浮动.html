@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>39-浮动</title>
+    <style>
+        img {
+            float: left;
+        }
+        div {
+
+        }
+        /* 浮动块的标签：顶对其 */
+        /* 浮动：在一行排列，宽高生效 -- 浮动后的标签具备行内块特点 */
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+            margin-top: 50px;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            float: left;
+
+            /*因为有浮动，不能生效 - 盒子无法水平居中*/
+            margin: 0 auto;
+        }
+        .three {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<!--    <img src="04.png" alt="">-->
+<!--    dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁 dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁 dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁 dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁 dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁 dfasfsadfasfasdff弘法寺但发窘很看a丧胆反抗a苏丹房卡囧很代a囧很看a岁-->
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>
